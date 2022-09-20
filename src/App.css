@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+:root {
+	--primaryColor: #1e3a8a;
+	--whiteColor: #fafaf9;
+}
+.width-sidebar {
+	width: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.min-sidebar {
+	width: 80px;
+}
+.sidebar {
+	transition: 300ms;
+	background-color: var(--primaryColor);
+}
+.sidebar-arrow {
+	right: -19px;
+	margin-top: -2px;
+	top: 9px;
+	width: 40px;
+	height: 40px;
+	color: #3b82f6;
+	border: 2px solid white;
+	border-radius: 100px;
+	cursor: pointer;
+}
+.dashboard-icon {
+	cursor: pointer;
+	transition: 500ms ease-in-out;
+	width: 30px;
+	height: 30px;
+}
+.dashboard-icon-rotate {
+	transform: rotate(360deg);
+}
+.text {
+	margin-left: 20px;
+	transform-origin: left;
+	font-weight: 500;
+}
+.rotate {
+	transform: rotate(180deg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.listItem {
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 20px;
+	margin-left: -10px;
+	left: -4px;
+	color: var(--whiteColor);
+	text-decoration: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.listItem:hover {
+	background-color: #3b82f6;
+	color: white;
+	border-radius: 4px;
 }
-
-.App-link {
-  color: #61dafb;
+.menuIcon {
+	width: 40px;
+	height: 40px;
+	float: left;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.active {
+	background-color: #3b82f6;
+	color: white;
+	border-radius: 3px;
+	line-height: 30px;
+	padding: 3px;
+	width: 120px;
+}
+.dropdown {
+	margin-left: 130px;
+	margin-top: 5px;
+}
+.children {
+	cursor: pointer;
+	padding: 2px;
+	gap: 4px;
+	text-decoration: none !important;
+}
+.children:hover {
+	background-color: #3b82f6;
+	width: 100px;
+	border-radius: 4px;
 }
